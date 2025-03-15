@@ -4,7 +4,6 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   width: 1100px;
-  height: 293;
   padding: 93px 50px 93px 50px;
 }
 
@@ -49,9 +48,6 @@
   font-size: 18px;
   font-style: normal;
   line-height: 24px;
-}
-
-.header__address {
   text-underline-offset: 5px;
 }
 
@@ -59,7 +55,7 @@
   position: relative;
   z-index: 2;
   width: 1100px;
-  height: 757px;
+  min-height: 757px;
   margin-bottom: 180px;
   color: rgb(255 255 255);
   background-image: url(../images/cover.jpg);
@@ -136,7 +132,7 @@
 
 .bet-button {
   margin-right: 51px;
-  border: 1px solid rgb(255 255 255);
+  border: 1px solid currentColor;
   padding: 11px 31px;
   color: rgb(255 255 255);
   font-weight: 500;
@@ -149,7 +145,6 @@
 
 .lots {
   width: 1052px;
-  height: 723px;
   margin-bottom: 120px;
   margin-left: 24px;
 }
@@ -165,6 +160,7 @@
 
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
 }
 
@@ -185,6 +181,9 @@
   min-height: 596px;
   margin-bottom: 30px;
   padding: 48px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card__title {
@@ -207,23 +206,14 @@
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .lots__look-more-link {
@@ -239,18 +229,17 @@
   grid-template-columns: 1fr auto;
   gap: 72px;
   width: 1052px;
-  height: 595px;
-  margin-bottom: 180px;
+  margin-bottom: 181px;
   margin-left: 24px;
 }
 
 .about__logo {
   width: 240px;
   height: 240px;
-  margin-top: 35px;
+  margin-top: 36px;
   margin-left: 47px;
   border-radius: 50%;
-  padding-top: 63px;
+  padding-top: 62px;
   padding-left: 45px;
   background-color: rgb(0 0 0);
 }
@@ -261,7 +250,7 @@
 }
 
 .about__column {
-  align-content: end;
+  margin-top: 134px;
 }
 
 .about__title {
@@ -282,12 +271,7 @@
   grid-template-columns: auto 1fr 1fr;
   gap: 166px;
   width: 1100px;
-  height: 180px;
   padding: 0px 50px 115px 50px;
-}
-
-.footer_address {
-  text-underline-offset: 5px;
 }
 
 .footer__menu {
